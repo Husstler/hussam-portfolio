@@ -44,9 +44,9 @@ const Navbar = () => {
               <Button color="inherit" onClick={goToWeb}>Web Usability</Button>
             </Grid>
             <Grid item md={3}>
-              <Typography onClick={goHome} variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              <Button onClick={goHome} color="inherit">
                 Home
-              </Typography>
+              </Button>
             </Grid>
           </Grid>
         </Toolbar>
