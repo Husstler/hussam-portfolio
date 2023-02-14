@@ -16,6 +16,11 @@ const Navbar = () => {
   const goToWeb = () => {
     navigate("/web");
   }
+
+  const goHome = () => {
+    navigate("/");
+  }
+
   return (
     <Box>
       <AppBar position="static">
@@ -33,13 +38,13 @@ const Navbar = () => {
               </IconButton>
             </Grid>
             <Grid item md={3}>
-              <Button color="inherit">Blog</Button>
+              <Button color="inherit">Blog (Coming Soon)</Button>
             </Grid>
             <Grid item md={3}>
               <Button color="inherit" onClick={goToWeb}>Web Usability</Button>
             </Grid>
             <Grid item md={3}>
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              <Typography onClick={goHome} variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 Home
               </Typography>
             </Grid>
