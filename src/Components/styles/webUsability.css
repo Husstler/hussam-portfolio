@@ -1,4 +1,33 @@
-.homepage{
-    background-color: white;
-    height: 100vh;
-}
+.web-usability-container {
+    background-color: #fff;
+    padding: 50px 0;
+    min-height: calc(100vh - 60px);
+  }
+  
+  .page-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .page-subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+  
+  .principle-container {
+    margin-bottom: 50px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .MuiDivider-root {
+    background-color: #000;
+    height: 4px;
+    margin-bottom: 20px;
+  }

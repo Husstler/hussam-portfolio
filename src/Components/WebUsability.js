@@ -1,4 +1,4 @@
-import { Divider, Paper, Typography } from "@mui/material";
+import { Divider, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
 import "./styles/webUsability.css";
@@ -6,53 +6,53 @@ import "./styles/webUsability.css";
 const WebUsability = () => {
   const principles = [
     {
-      Principle: "Avalibility",
+      Principle: "Availability",
       Point:
-        "Avalibility refers to how accessible the website is for the user. My design of this web application should be compatible with all devices as it is meant to take into account all screen sizes and supports all major browsers.",
+        "Availability refers to how accessible the website is for the user. My design of this web application should be compatible with all devices as it is meant to take into account all screen sizes and supports all major browsers.",
     },
     {
       Principle: "Clarity",
       Point:
-        "Clarity refers to the strain on the eyes and reduction of white noise. All the features of the website are displayed through the navigation bar and highlighted information is focused on by leeping it within a white container which should be the user's center of focus",
+        "Clarity refers to the strain on the eyes and reduction of white noise. All the features of the website are displayed through the navigation bar and highlighted information is focused on by keeping it within a white container which should be the user's center of focus.",
     },
     {
       Principle: "Recognition",
       Point:
-        "Recognition referes to the learning process of new users. Since the website does not have many components at the moment, learning to use it should be quite straightforward. Any new components that are added will be placed into the navigation bar.",
+        "Recognition refers to the learning process of new users. Since the website does not have many components at the moment, learning to use it should be quite straightforward. Any new components that are added will be placed into the navigation bar.",
     },
     {
       Principle: "Credibility",
       Point:
-        "Credibility is quite self explanitory, since my website is not a media outlet and is simply a portfolio introducing information about myself there is no reason a user should be concerened with this point",
+        "Credibility is quite self-explanatory. Since my website is not a media outlet and is simply a portfolio introducing information about myself, there is no reason a user should be concerned with this point.",
     },
     {
       Principle: "Relevance",
       Point:
-        "Relevance referes to engaging content within the website and I would say my website adheres to that by using interactive tools such as the navigation bar. I plan to add more features as well ranging from a typing emulator to more interactive features such as a minigame.",
+        "Relevance refers to engaging content within the website, and I would say my website adheres to that by using interactive tools such as the navigation bar. I plan to add more features as well, ranging from a typing emulator to more interactive features such as a mini-game.",
     },
   ];
   return (
-    <Container className="homepage">
-      <Box height={10} />
-      <h1>Web Usability</h1>
+    <div className="web-usability-container">
+      <Container>
+        <h1 className="page-title">Web Usability</h1>
 
-      <Typography>
-        Web usability can be broken down into five principles which will be
-        discussed below:
-      </Typography>
-      <Box height={50} />
+        <Typography variant="body1" className="page-subtitle">
+          Web usability can be broken down into five principles which will be
+          discussed below:
+        </Typography>
+        <Box height={50} />
 
-
-        {principles.map((item) => {
+        {principles.map((item, index) => {
           return (
-            <div>
+            <div key={index} className="principle-container">
               <h2>{item.Principle}</h2>
               <Divider />
-              <Typography>{item.Point}</Typography>
+              <Typography variant="body1">{item.Point}</Typography>
             </div>
           );
         })}
-    </Container>
+      </Container>
+    </div>
   );
 };
 

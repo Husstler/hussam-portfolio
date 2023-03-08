@@ -1,7 +1,8 @@
-body {
 
-  background-image: url('../assets/space-background.jpg');
-  color: black;
+
+body {
+  background: linear-gradient(0.4turn, black, black, grey);
+  color: white;
   font-family: "Lucida Handwriting", "cursive"
 }
 
