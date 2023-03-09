@@ -18,12 +18,12 @@ const HomePage = () => {
   ];
 
   return (
-    <div style={{ backgroundColor: 'black', minHeight: '100vh', color: 'white' }}>
+    <div className="homepage">
       <Container className="py-5">
         <Row>
           <Col md={6} className="mb-4">
-            <h1 className="mb-3">Hello, I'm Hussam Tahir</h1>
-            <p className="lead mb-4">I'm a third-year Honors Degree student with experience in front-end web development. I'm eager to expand my skillset and develop my back-end programming capabilities.</p>
+            <h1 className="mb-3" style={{ fontSize: "3rem", color: "#fff" }}>Hello, I'm Hussam Tahir</h1>
+            <p className="lead mb-4" style={{ fontSize: "1.5rem", lineHeight: "2rem", color: "#fff" }}>I'm a third-year Honors Degree student with experience in front-end web development. I'm eager to expand my skillset and develop my back-end programming capabilities.</p>
             <Button variant="light">View My Work</Button>
           </Col>
           <Col md={6}>
@@ -33,8 +33,8 @@ const HomePage = () => {
                   <img src={interest.image} alt={interest.heading} style={{ width: '100%', borderRadius: '10px' }} />
                 </Col>
                 <Col xs={12} md={6}>
-                  <h4 className="mb-3">{interest.heading}</h4>
-                  <p>{interest.description}</p>
+                  <h4 className="mb-3" style={{ fontSize: "2rem", color: "#fff" }}>{interest.heading}</h4>
+                  <p style={{ fontSize: "1.25rem", lineHeight: "1.5rem", color: "#fff" }}>{interest.description}</p>
                 </Col>
               </Row>
             ))}

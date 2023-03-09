@@ -1,15 +1,35 @@
-.app-container {
+body {
   background: linear-gradient(0.4turn, black, black, grey);
-  min-height: 100vh;
+  font-family: "Lucida Handwriting", "cursive";
+  color: #333;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+}
+
+.app-container {
   margin: 0 auto;
-  max-width: 1200px;
   padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 
 }
 
 .content-container {
-  background: linear-gradient(0.4turn, black, black, grey);
   margin: 0 auto;
-  max-width: 1200px;
   padding: 50px 20px;
 }
+
+html{
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+}
+

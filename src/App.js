@@ -1,22 +1,27 @@
 import "./App.css";
-import Navbar from "./Components/NavigationBar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from "./Components/HomePage";
 import WebUsability from "./Components/WebUsability";
 import { Box } from "@mui/system";
 import NavigationBar from "./Components/NavigationBar";
+import FlappyBird from "./Components/FlappyBird";
+import SnakeGame from "./Components/SnakeGame";
+import Loading from "./Components/Loading";
+import HomePage from "./Components/HomePage";
 
 function App() {
   return (
-    <div className="app-container">
+    <div>
       <BrowserRouter>
         <NavigationBar />
-        <div className="content-container">
+        <Box  className="app-container" sx={{ maxWidth: "100%" }}>
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="web" element={<WebUsability />} />
+            <Route path="/" element={<Loading />} />
+            <Route path="/home" element={<HomePage />} />
+            <Route path="/web" element={<WebUsability />} />
+            <Route path="/flappybird" element={<FlappyBird />} />
+            <Route path="/snakeGame" element={<SnakeGame />} />
           </Routes>
-        </div>
+        </Box>
       </BrowserRouter>
     </div>
   );
