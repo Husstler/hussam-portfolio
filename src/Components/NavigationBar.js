@@ -14,11 +14,8 @@ const NavigationBar = () => {
             <Nav.Link as={Link} to="/web">
               Web Usability
             </Nav.Link>
-            <Nav.Link as={Link} to="/flappybird">
-              Flappy Bird
-            </Nav.Link>
-            <Nav.Link as={Link} to="/snakeGame">
-              Snake Game
+            <Nav.Link as={Link} to="/projects">
+              Projects
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
@@ -33,3 +30,11 @@ export default NavigationBar;
 
 
 
+/*
+            <Nav.Link as={Link} to="/flappybird">
+              Flappy Bird
+            </Nav.Link>
+            <Nav.Link as={Link} to="/snakeGame">
+              Snake Game
+            </Nav.Link>
+*/

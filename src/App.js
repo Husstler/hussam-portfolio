@@ -7,6 +7,7 @@ import FlappyBird from "./Components/FlappyBird";
 import SnakeGame from "./Components/SnakeGame";
 import Loading from "./Components/Loading";
 import HomePage from "./Components/HomePage";
+import Projects from "./Components/Projects";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/web" element={<WebUsability />} />
             <Route path="/flappybird" element={<FlappyBird />} />
             <Route path="/snakeGame" element={<SnakeGame />} />
+            <Route path="/projects" element={<Projects />} />
           </Routes>
         </Box>
       </BrowserRouter>
