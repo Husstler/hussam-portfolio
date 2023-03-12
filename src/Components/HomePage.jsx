@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import softwareImage from '../assets/Software.jpg';
 import rugbyImage from '../assets/Rugby.JPG';
 import './styles/homepage.css';
-import ChatBot from './ChatBot';
+//import ChatBot from './ChatBot';
 
 const HomePage = () => {
   const interests = [
