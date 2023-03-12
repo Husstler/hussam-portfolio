@@ -8,6 +8,7 @@ import SnakeGame from "./Components/SnakeGame";
 import Loading from "./Components/Loading";
 import HomePage from "./Components/HomePage";
 import Projects from "./Components/Projects";
+import Images from "./Components/Images";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
             <Route path="/flappybird" element={<FlappyBird />} />
             <Route path="/snakeGame" element={<SnakeGame />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/images" element={<Images />} />
+
+
           </Routes>
         </Box>
       </BrowserRouter>

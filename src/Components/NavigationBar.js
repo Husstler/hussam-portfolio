@@ -14,9 +14,14 @@ const NavigationBar = () => {
             <Nav.Link as={Link} to="/web">
               Web Usability
             </Nav.Link>
+            <Nav.Link as={Link} to="/Images">
+              Images
+            </Nav.Link>
+
             <Nav.Link as={Link} to="/projects">
               Projects
             </Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Container>

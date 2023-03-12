@@ -3,6 +3,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import softwareImage from '../assets/Software.jpg';
 import rugbyImage from '../assets/Rugby.JPG';
 import './styles/homepage.css';
+import ChatBot from './ChatBot';
 
 const HomePage = () => {
   const interests = [
@@ -26,6 +27,7 @@ const HomePage = () => {
             <h1 className="mb-3" style={{ fontSize: "3rem", color: "#ffd700" }}>Hello, I'm Hussam Tahir</h1>
             <p className="lead mb-4" style={{ fontSize: "1.5rem", lineHeight: "2rem", color: "#fff" }}>I'm a third-year Honors Degree student with experience in front-end web development. I'm eager to expand my skillset and develop my back-end programming capabilities.</p>
             <Button className="yellow-button" variant="warning">View My Work</Button>
+            
           </Col>
           <Col md={6}>
             {interests.map((interest, index) => (
