@@ -1,7 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import WebUsability from "./Components/WebUsability";
-import { Box } from "@mui/system";
 import NavigationBar from "./Components/NavigationBar";
 import FlappyBird from "./Components/FlappyBird";
 import SnakeGame from "./Components/SnakeGame";
@@ -15,7 +14,7 @@ function App() {
     <div>
       <BrowserRouter>
         <NavigationBar />
-        <Box  className="app-container" sx={{ maxWidth: "100%" }}>
+        <div  className="app-container" sx={{ maxWidth: "100%" }}>
           <Routes>
             <Route path="/" element={<Loading />} />
             <Route path="/home" element={<HomePage />} />
@@ -27,7 +26,7 @@ function App() {
 
 
           </Routes>
-        </Box>
+        </div>
       </BrowserRouter>
     </div>
   );
