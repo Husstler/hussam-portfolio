@@ -3,9 +3,17 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import softwareImage from '../assets/Software.jpg';
 import rugbyImage from '../assets/Rugby.JPG';
 import './styles/homepage.css';
+import { useNavigate } from 'react-router-dom';
 //import ChatBot from './ChatBot';
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = (e) => {
+
+    navigate("/projects");
+
+  }
   const interests = [
     {
       image: softwareImage,
@@ -26,7 +34,7 @@ const HomePage = () => {
           <Col md={6} className="mb-4">
             <h1 className="mb-3" style={{ fontSize: "3rem", color: "#ffd700" }}>Hello, I'm Hussam Tahir</h1>
             <p className="lead mb-4" style={{ fontSize: "1.5rem", lineHeight: "2rem", color: "#fff" }}>I'm a third-year Honors Degree student with experience in front-end web development. I'm eager to expand my skillset and develop my back-end programming capabilities.</p>
-            <Button className="yellow-button" variant="warning">View My Work</Button>
+            <Button className="yellow-button" variant="warning" onClick={handleNavigation}>View My Work</Button>
             
           </Col>
           <Col md={6}>
