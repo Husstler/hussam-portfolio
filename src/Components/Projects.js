@@ -9,7 +9,8 @@ const personalProjects = [
     title: 'Weather Application',
     description: 'This weather application was my first ever project created using purely NodeJS and html takes your input and cross-references it with a json file containing all the cities in the world. It then prints out the matching cities weathers through an API call.',
     url: "https://weather-application.herokuapp.com/"
-  },
+  }
+  /*,
   {
     id: 2,
     imageSrc: 'project-2.jpg',
@@ -24,16 +25,18 @@ const personalProjects = [
     description: 'This is a short description of personal project 3.',
     url: "https://example.com/"
   },
+  */
 ];
 
 const professionalProjects = [
   {
     id: 4,
-    imageSrc: 'project-4.jpg',
-    title: 'Professional Project 1',
-    description: 'This is a short description of professional project 1.',
+    imageSrc: 'To be deployed',
+    title: 'TBD',
+    description: 'TBD',
     url: "https://example.com/"
   },
+  /*
   {
     id: 5,
     imageSrc: 'project-5.jpg',
@@ -48,6 +51,7 @@ const professionalProjects = [
     description: 'This is a short description of professional project 3.',
     url: "https://example.com/"
   },
+  */
 ];
 
 const Projects = () => {
