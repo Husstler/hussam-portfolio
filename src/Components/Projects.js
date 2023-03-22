@@ -9,15 +9,16 @@ const personalProjects = [
     title: 'Weather Application',
     description: 'This weather application was my first ever project created using purely NodeJS and html takes your input and cross-references it with a json file containing all the cities in the world. It then prints out the matching cities weathers through an API call.',
     url: "https://weather-application.herokuapp.com/"
-  }
-  /*,
+  },
   {
     id: 2,
     imageSrc: 'project-2.jpg',
-    title: 'Personal Project 2',
-    description: 'This is a short description of personal project 2.',
-    url: "https://example.com/"
-  },
+    title: 'Virtual Cooking Assistant',
+    description: 'I created a virtual cooking assistant that helps users find new recipies through the mealdb api. The ingredients component is incomplete but the main functionality is finding food recipes using ingredients that you check.',
+    url: "https://cooking-assistant.vercel.app/"
+  }
+
+  /*,
   {
     id: 3,
     imageSrc: 'project-3.jpg',
