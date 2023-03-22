@@ -1,6 +1,7 @@
 import React from 'react';
 import "./styles/projects.css";
 import WeatherPhoto from '../assets/WeatherApp.PNG';
+import CookingPhoto from '../assets/VirtualCookingAssistant.PNG'
 
 const personalProjects = [
   {
@@ -12,7 +13,7 @@ const personalProjects = [
   },
   {
     id: 2,
-    imageSrc: 'project-2.jpg',
+    imageSrc: CookingPhoto,
     title: 'Virtual Cooking Assistant',
     description: 'I created a virtual cooking assistant that helps users find new recipies through the mealdb api. The ingredients component is incomplete but the main functionality is finding food recipes using ingredients that you check.',
     url: "https://cooking-assistant.vercel.app/"
