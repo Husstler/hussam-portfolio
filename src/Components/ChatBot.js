@@ -33,7 +33,11 @@ const ChatBot = () => {
 
   const sendMessage = async () => {
     if (input) {
-      setMessages([...messages, { user: true, text: input }]);
+      // Add user message to messages array
+      const updatedMessages = [...messages, { user: true, text: input }];
+      setMessages(updatedMessages);
+  
+      // Get chat bot response and add it to messages array
       const response = await fetch(
         "https://hussam-qgicw5g3m-husstler.vercel.app/chat",
         {
@@ -45,11 +49,13 @@ const ChatBot = () => {
         }
       );
       const data = await response.json();
-      setMessages([...messages, { user: false, text: data.response }]);
+      const botResponse = { user: false, text: data.response };
+      setMessages([...updatedMessages, botResponse]);
+  
       setInput("");
     }
   };
-
+  
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       sendMessage();
