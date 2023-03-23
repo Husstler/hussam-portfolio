@@ -3,6 +3,8 @@ import "./styles/projects.css";
 import WeatherPhoto from '../assets/WeatherApp.PNG';
 import CookingPhoto from '../assets/VirtualCookingAssistant.PNG'
 import ChatBotSC from '../assets/ChatBot.PNG'
+import ChickenLogo from '../assets/logo.png'
+
 
 const personalProjects = [
   {
@@ -33,10 +35,10 @@ const personalProjects = [
 const professionalProjects = [
   {
     id: 4,
-    imageSrc: 'To be deployed',
-    title: 'TBD',
-    description: 'TBD',
-    url: "https://example.com/"
+    imageSrc: ChickenLogo,
+    title: 'Chicken 2 Go',
+    description: 'I am the leading developer for this capstone project, were currently designing a restaurant system that offers several interfaces for customers, managers and drivers',
+    url: "https://chicken2go.onrender.com/"
   },
   /*
   {
