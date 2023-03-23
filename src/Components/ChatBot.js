@@ -64,7 +64,7 @@ const ChatBot = () => {
 
   return (
     <Box>
-      <Typography variant="subtitle">The end goal for this bot is to turn it into an interactive AI that answers any questions about, the AI still needs training at the moment so please bear that in mind when interacting with it.</Typography>
+      <Typography variant="subtitle">The end goal for this bot is to turn it into an interactive AI that answers any questions about me! The AI still needs training at the moment so please bear that in mind when interacting with it.</Typography>
       {" "}
       <Paper component={Container}>
         {messages.map((message, index) => (
