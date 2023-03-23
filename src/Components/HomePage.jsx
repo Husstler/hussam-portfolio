@@ -4,8 +4,6 @@ import softwareImage from '../assets/Software.jpg';
 import rugbyImage from '../assets/Rugby.JPG';
 import './styles/homepage.css';
 import { useNavigate } from 'react-router-dom';
-import ChatBot from './ChatBot';
-//import ChatBot from './ChatBot';
 
 const HomePage = () => {
   const navigate = useNavigate();

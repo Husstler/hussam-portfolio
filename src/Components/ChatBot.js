@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Configuration, OpenAI } from "openai";
-import { makeStyles } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
-import { Box, Paper, TextField } from "@material-ui/core";
+import { Box, Button, makeStyles, Paper, TextField } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
   root: {
