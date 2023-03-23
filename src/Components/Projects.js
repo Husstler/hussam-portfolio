@@ -2,6 +2,7 @@ import React from 'react';
 import "./styles/projects.css";
 import WeatherPhoto from '../assets/WeatherApp.PNG';
 import CookingPhoto from '../assets/VirtualCookingAssistant.PNG'
+import ChatBotSC from '../assets/ChatBot.PNG'
 
 const personalProjects = [
   {
@@ -19,15 +20,14 @@ const personalProjects = [
     url: "https://cooking-assistant.vercel.app/"
   }
 
-  /*,
+ ,
   {
     id: 3,
-    imageSrc: 'project-3.jpg',
-    title: 'Personal Project 3',
-    description: 'This is a short description of personal project 3.',
-    url: "https://example.com/"
+    imageSrc: ChatBotSC,
+    title: 'ChatBot AI',
+    description: 'I deployed a backend server to host this AI, the backend server was created through a combination of node and express. The final product will be an AI that answers personal quesitons about me',
+    url: "https://hussam-portfolio-g98oke9al-husstler.vercel.app/chatbot"
   },
-  */
 ];
 
 const professionalProjects = [
