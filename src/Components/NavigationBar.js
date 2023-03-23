@@ -22,6 +22,11 @@ const NavigationBar = () => {
               Projects
             </Nav.Link>
 
+            <Nav.Link as={Link} to="/chatbot">
+              Chatbot (Beta)
+            </Nav.Link>
+
+
           </Nav>
         </Navbar.Collapse>
       </Container>

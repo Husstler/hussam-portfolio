@@ -8,6 +8,7 @@ import Loading from "./Components/Loading";
 import HomePage from "./Components/HomePage";
 import Projects from "./Components/Projects";
 import Images from "./Components/Images";
+import ChatBot from "./Components/ChatBot";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
             <Route path="/snakeGame" element={<SnakeGame />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/images" element={<Images />} />
+            <Route path="/chatbot" element={<ChatBot />} />
+
 
 
           </Routes>
