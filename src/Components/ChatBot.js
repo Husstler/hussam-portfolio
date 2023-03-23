@@ -1,43 +1,33 @@
 import React, { useState } from "react";
 import { Configuration, OpenAI } from "openai";
-import { Box, Button, makeStyles, Paper, TextField } from "@mui/material";
+import { Box, Button, Paper, TextField } from "@mui/material";
+import { styled } from "@mui/material/styles";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    margin: "auto",
-    maxWidth: 600,
-    padding: theme.spacing(3),
-  },
-  message: {
-    padding: theme.spacing(1),
-    margin: theme.spacing(1),
-    borderRadius: "8px",
-    backgroundColor: theme.palette.primary.main,
-    color: theme.palette.primary.contrastText,
-    textAlign: "left",
-    alignSelf: "flex-start",
-    maxWidth: "60%",
-  },
-  userMessage: {
-    alignSelf: "flex-end",
-    backgroundColor: theme.palette.secondary.main,
-  },
-  inputContainer: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    margin: theme.spacing(2),
-  },
-  inputField: {
-    marginRight: theme.spacing(2),
-  },
+const Container = styled("div")(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  margin: "auto",
+  maxWidth: 600,
+  padding: theme.spacing(3),
+}));
+
+const MessageContainer = styled("div")(({ theme, user }) => ({
+  padding: theme.spacing(1),
+  margin: theme.spacing(1),
+  borderRadius: "8px",
+  backgroundColor: user
+    ? theme.palette.secondary.main
+    : theme.palette.primary.main,
+  color: user
+    ? theme.palette.secondary.contrastText
+    : theme.palette.primary.contrastText,
+  textAlign: user ? "right" : "left",
+  alignSelf: user ? "flex-end" : "flex-start",
+  maxWidth: "60%",
 }));
 
 const ChatBot = () => {
-  const classes = useStyles();
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([]);
 
@@ -69,32 +59,27 @@ const ChatBot = () => {
   return (
     <Box>
       {" "}
-      <Paper className={classes.root}>
+      <Paper component={Container}>
         {messages.map((message, index) => (
-          <div
-            key={index}
-            className={`${classes.message} ${
-              message.user ? "" : classes.userMessage
-            }`}
-          >
+          <MessageContainer key={index} user={message.user}>
             {message.user ? "You: " : "ChatBot: "}
             {message.text}
-          </div>
+          </MessageContainer>
         ))}
-        <div className={classes.inputContainer}>
+        <Box display="flex" justifyContent="center" alignItems="center" margin={2}>
           <TextField
-            className={classes.inputField}
+            variant="outlined"
+            fullWidth
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyPress}
             label="Type your message here"
-            variant="outlined"
-            fullWidth
+            sx={{ marginRight: 2 }}
           />
           <Button variant="contained" color="primary" onClick={sendMessage}>
             Send
           </Button>
-        </div>
+        </Box>
       </Paper>
     </Box>
   );
