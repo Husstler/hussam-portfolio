@@ -82,7 +82,7 @@ const Projects = () => {
       <h2>Professional Projects</h2>
       <div className="projects-container">
         {professionalProjects.map((project) => (
-          <div key={project.id} className="project-card">
+          <div key={project.id} className="project-card" onClick={() => handleProjectClick(project)} >
             <img src={project.imageSrc} alt={project.title} />
             <div className="project-info">
               <h3>{project.title}</h3>
