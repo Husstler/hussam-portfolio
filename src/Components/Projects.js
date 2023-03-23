@@ -26,7 +26,7 @@ const personalProjects = [
     imageSrc: ChatBotSC,
     title: 'ChatBot AI',
     description: 'I deployed a backend server to host this AI, the backend server was created through a combination of node and express. The final product will be an AI that answers personal quesitons about me',
-    url: "https://hussam-portfolio-g98oke9al-husstler.vercel.app/chatbot"
+    url: "https://hussamtahir.com/chatbot"
   },
 ];
 
