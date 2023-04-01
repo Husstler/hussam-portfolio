@@ -9,6 +9,7 @@ import HomePage from "./Components/HomePage";
 import Projects from "./Components/Projects";
 import Images from "./Components/Images";
 import ChatBot from "./Components/ChatBot";
+import AnimationWeb from "./Components/Animation";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/images" element={<Images />} />
             <Route path="/chatbot" element={<ChatBot />} />
+            <Route path="/animation" element={<AnimationWeb />} />
 
 
 
