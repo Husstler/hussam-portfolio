@@ -17,7 +17,7 @@ const HomePage = () => {
     {
       image: softwareImage,
       heading: 'Software Experience',
-      description: 'I stay updated on new software trends by regularly attending industry conferences and keeping up-to-date with the latest industry news and publications.'
+      description: 'I keep in touch with my development side by creating different projects from time to time and constantly checking industry trends'
     },
     {
       image: rugbyImage,
@@ -32,7 +32,7 @@ const HomePage = () => {
         <Row>
           <Col md={6} className="mb-4">
             <h1 className="mb-3" style={{ fontSize: "3rem", color: "#ffd700" }}>Hello, I'm Hussam Tahir</h1>
-            <p className="lead mb-4" style={{ fontSize: "1.5rem", lineHeight: "2rem", color: "#fff" }}>I'm a third-year Honors Degree student with experience in front-end web development. I'm eager to expand my skillset and develop my back-end programming capabilities.</p>
+            <p className="lead mb-4" style={{ fontSize: "1.5rem", lineHeight: "2rem", color: "#fff" }}>I'm a fourth-year Honors Degree student with five years of web development experience. My current goal is to become an AI developer and I have been taking the steps of achieving that goal by learning TensorFlow and completing machine learning certifications</p>
             <Button className="yellow-button" variant="warning" onClick={handleNavigation}>View My Work</Button>
             
           </Col>
