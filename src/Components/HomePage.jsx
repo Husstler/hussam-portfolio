@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import softwareImage from '../assets/Software.jpg';
-import rugbyImage from '../assets/Rugby.JPG';
+import softwareImage from '../assets/Suit.jpg';
+import rugbyImage from '../assets/Rugby2.jpg';
 import './styles/homepage.css';
 import { useNavigate } from 'react-router-dom';
 

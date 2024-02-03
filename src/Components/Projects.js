@@ -4,6 +4,12 @@ import WeatherPhoto from '../assets/WeatherApp.PNG';
 import CookingPhoto from '../assets/VirtualCookingAssistant.PNG'
 import ChatBotSC from '../assets/ChatBot.PNG'
 import ChickenLogo from '../assets/logo.png'
+import SketchSquare from '../assets/WallpaperWithCloud.webp'
+import SimpliTalk from '../assets/SimpliTalkCx.png'
+import FifthPort from '../assets/5thport.png'
+import PierVintage from '../assets/PierVintage.jpg'
+
+
 
 
 const personalProjects = [
@@ -30,16 +36,50 @@ const personalProjects = [
     description: 'I deployed a backend server to host this AI, the backend server was created through a combination of node and express. The final product will be an AI that answers personal quesitons about me',
     url: "https://hussamtahir.com/chatbot"
   },
-];
-
-const professionalProjects = [
   {
     id: 4,
     imageSrc: ChickenLogo,
     title: 'Chicken 2 Go',
     description: 'I am the leading developer for this capstone project, were currently designing a restaurant system that offers several interfaces for customers, managers and drivers',
     url: "https://chicken2go.onrender.com/"
+
   },
+  {
+    id: 5,
+    imageSrc: SketchSquare,
+    title: 'Sketch Square',
+    description: 'This project marks the launch of Pixel Pioneers Studio, a startup organization of developers aiming to enhance their web programming skillsets while contributing products of value. Have fun while exploring this tool and any feedback would be appreciated!',
+    url: "https://www.sketchsquare.app/"
+
+  }
+];
+
+const professionalProjects = [
+  {
+    id: 1,
+    imageSrc: FifthPort,
+    title: '5th Port',
+    description: 'During my time at DecisivEdge Consultant CA, I had the pleasure of working as a UX/UI Designer on their digital product 5th Port',
+    url: "https://www.5thport.com/"
+  },
+
+  {
+    id: 2,
+    imageSrc: SimpliTalk,
+    title: 'SimpliTalk CX',
+    description: 'Although I was onboarded as a UX/UI Designer, I took on the role of Front-End Development for this product SimpliTalkCx before its launch. During my time on this project I got to the chance of improving my familiarity with Angular and was introduced to .NET as well.',
+    url: "https://www.decisivedge.com/introducing-simplitalkcx-affordable-workforce-management-solution/"
+  },
+
+  {
+    id: 3,
+    imageSrc: PierVintage,
+    title: 'PierVintage',
+    description: 'This project was the most challenging for me during my career as a web developer. With little to no experience in backend development I was onboarded to a project that was short on backend developers. Over the 6 months I spent on this project I became much more familar with .NET and adapted to using KnockoutJS as well',
+    url: "https://www.piervantage.com/"
+  }
+
+
   /*
   {
     id: 5,
@@ -79,7 +119,7 @@ const Projects = () => {
         ))}
       </div>
 
-      <h2>Professional Projects</h2>
+      <h2>Professional Contributions</h2>
       <div className="projects-container">
         {professionalProjects.map((project) => (
           <div key={project.id} className="project-card" onClick={() => handleProjectClick(project)} >
